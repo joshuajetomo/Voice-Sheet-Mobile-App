@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".About"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_about">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developers"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="65dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="25dp"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/black"
+            />
+        <!--android:src="@drawable/joshua"-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="25dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="0.5dp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="Joshua Jetomo"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joel Rostata"
+            android:layout_gravity="top|right"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="28dp"
+
+
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="25dp"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/black"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="25dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="0.5dp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="Jadeza May Bantilan"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kenneth Repoyo"
+            android:layout_gravity="top|right"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"
+
+
+            />
+    </FrameLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:textColor="@color/red"
+    android:text="EARIST 2018"
+    android:layout_gravity="bottom|right"
+    />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Voice Sheet</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="record_btn_description">click the button can start recording</string>
+    <string name="progressbar_body">Music score manufacturing</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_sheets">Music Scores</string>
+    <string name="nav_record">Record</string>
+    <string name="nav_about">About</string>
+    <string name="nav_settings">Settings</string>
+    <string name="title_activity_bottomnavifationview">Activity_bottomnavifationview</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>s
+    <string name="title_notifications">Notifications</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_sample">sample</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_record">record</string>
+    <string name="title_import">Import</string>
+    <string name="title_voice_type">Voice Type</string>
+    <string name="help">Tutorial</string>
+    <string name="title_activity_saved_scores">Scores</string>
+    <string name="title_activity_Records">Record Voice</string>
+    <string name="title_activity_import">Import</string>
+    <string name="title_activity_voice_type">VoiceType</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_help">Tutorial</string>
+    <string name="title_voiceGender">Gender</string>
+    <string name="title_activity_scoreactivity">Play Score</string>
+    <string name="title_activity_sampledrawer">sampledrawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="musicalnotes">Musical Notes</string>
+    <string name="harmonicvoicetype">Harmonice Voice Types</string>
+    <string name="sheetmusic">Sheet Music</string>
+    <string name="print">Print</string>
+    <string name="textsample">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini m veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ve
+        lit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+ cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</string>
+
+
+    <string name="musical_notes">     There are seven letters that represent the seven musical notes in the piano’s white keys.
+ Pitch classes typically represent the notes by the first seven letters of the Latin alphabet, (A, B,C,D,E,F,G) or commonly known as Do-Re-Me-Fa-Sol-La-Ti.  The letter definition and corresponding notes are:
+</string>
+    <string name="musical_notes_2">Another kind of representation for notes does not depend on words or letters. It is the written form of music notation like this:</string>
+    <string name="sheet_music_how"> Sheet music registers the harmonic, rhythmic and melodic ideas. The same way you memorized the sound of each letter, you will also need to memorize the way that each note is shown in the paper. In the end you will be dominating a new language!</string>
+
+
+    <string name="sheet_music_staff">Staff is the region where we write the notes. This region is created by lines and spaces. Each line and each space are used to represent a different note. In the image below, you can see the numeration of lines (1st, 2nd, 3rd, 4th and 5th).</string>
+
+
+    <string name="sheet_music_staff2">Notice that there are 5 lines in the staff. It is possible to create more lines to reach other octaves (the first C of this example and the last A, are in extra lines, also called as Ledger Lines).</string>
+
+
+    <string name="sheet_music_treble">Musicians, throughout time, have chosen different positions for the notes in the staff lines. This is why clefs were created, these symbols that would serve to sign the note and the line of reference that was adopted. The most common clef for guitar, piano and voice is the Treble Clef. It received this name because it informs us that the note that will be in the second line will be a G. Notice that the design of the clef itself starts in the second line</string>
+    <string name="sheet_music_barline">A bar (or measure) is a time segment that is defined by a given number of beats, each of that are assigned to a particular note value. When separate music into bars it will give the regular points of reference to pinpoint locations within a piece of music. It also makes the written music easier to follow, since each symbol in the bar can be read and played as a batch.</string>
+
+
+    <string name="sheet_music_notes">There are three parts of each note, the note head, the stem and the flag.
+Every note has a note head, either filled (black) or open (white). Where the note head sits on the staff (either on a line or a space) determines which note you will play. Sometimes, note heads will sit above or below the five lines and four spaces of a staff. In that case, a line is drawn through the note, above the note or below the note head, to indicate the note letter to play, as in the B and C notes above.
+The note stem is a thin line that extends either up or down from the note head. The line extends from the right if pointing upward or from the left if pointing downward. The direction of the line doesn’t affect how to play the note, but serves as a way to make the notes easier to read while allowing them to fit neatly on the staff. As a rule, any notes at or above the B line on the staff have downward pointing stems, those notes below the B line have upward pointing stems.
+The note flag is a curvy mark to the right of the note stem. Its purpose is to tell how long to hold a note. See below how a single flag shortens the note’s duration, while multiple flags can make it shorter still.
+</string>
+
+    <string name="harmonic_voice_type">
+Voices are classified according to range, gender and somewhat according to quality.
+</string>
+
+
+    <string name="harmonic_soprano">The highest female voice type. A typical soprano can vocalize B3 to C6, though a soprano coloratura can sing a lot higher than that reaching F6, G6 etc. It is widely thought that the higher a singer can sing, the better the singer is.</string>
+
+
+    <string name="harmonic_alto">The lowest female voice type. Alto and Contralto are used synonymously, though contralto sometimes seems to carry the connotation of a particularly deep alto voice. The quality, typically is rich, resonant, dark and 'throaty'. A contralto is expected to be able to vocalize from E3 to F5, however, the lower her tessitura, the more valuable she is.</string>
+
+
+    <string name="harmonic_tenor">The highest male voice type you will find in a typical choir. Though it is the voice type with the smallest range, it barely covers 2 octaves from C3 to B4.</string>
+
+
+    <string name="harmonic_bass">The lowest male voice type, and thus a bass sings the lowest notes humanly possible. A bass will be asked to sing anywhere between a D2 and an E4. A cello’s lowest note is a C2.</string>
+    <string name="title_activity_print">print</string>
+
+
+</resources>
