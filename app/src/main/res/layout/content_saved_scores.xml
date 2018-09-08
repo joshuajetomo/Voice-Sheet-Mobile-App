@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -18,9 +19,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:theme="@style/StyleToolBar"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:titleTextColor="@color/black" />
-
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -28,18 +27,20 @@
         android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/Appbar"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/molengo"
+        android:text="Title"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:text="Title">
-    </TextView>
+        android:textSize="16sp"></TextView>
 
     <ScrollView
         android:id="@+id/scrollView1_scores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/play_btn_scores"
+        android:layout_above="@+id/frame"
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:layout_alignWithParentIfMissing="false"
@@ -57,7 +58,7 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/play_btn_scores">
+        android:layout_above="@+id/frame">
 
 
     </ScrollView>
@@ -66,66 +67,68 @@
         android:id="@+id/beatText_scores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabel"
         android:layout_centerHorizontal="true"
         android:background="#00000000"
+        android:fontFamily="sans-serif-thin"
         android:singleLine="true"
         android:text="99"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#80ff0000"
         android:textSize="150sp"
         android:textStyle="bold"
-        android:layout_below="@+id/titleLabel"
         android:visibility="visible" />
 
-    <ImageButton
-        android:id="@+id/play_btn_scores"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/twittertoolbar"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="10dp"
-        android:background="@null"
-        android:onClick="play_pause"
-        android:src="@drawable/playscore"
-        />
+      >
 
 
+        <ImageButton
+            android:id="@+id/play_btn_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="play_pause"
+            android:src="@drawable/play_play" />
 
+        <ImageButton
+            android:id="@+id/plus_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/next_n_next" />
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop_score"
+            android:layout_gravity="center"
+            android:layout_marginLeft="115dp"
+            android:backgroundTint="@color/gray"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_not_interested_white_24" />
 
+        <CheckBox
+            android:id="@+id/metronomeSwitch_scores"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="Beat | Metronome"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
-
-    <CheckBox
-        android:id="@+id/metronomeSwitch_scores"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="50dp"
-        android:textSize="16dp"
-        android:layout_marginRight="20dp"
-        android:text="Beat" />
-
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="10dp"
-        android:text="+"
-        android:id="@+id/plus_score"
-        android:textSize="16sp"
-        />
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:text="-"
-        android:id="@+id/minus_score"
-        android:textSize="20sp"
-        android:layout_marginBottom="5dp"
-        android:layout_alignParentBottom="true"
-        />
+    </FrameLayout>
 
 </RelativeLayout>

@@ -15,11 +15,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/app_logo"
+        android:icon="@mipmap/voicesheet_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,10 +60,6 @@
             android:label="@string/title_activity_help"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".sampledrawer"
-            android:label="@string/title_activity_sampledrawer"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name=".MusicalNotes"
             android:label="@string/musicalnotes"
             android:theme="@style/AppTheme" />
@@ -79,10 +76,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity
-            android:name=".print"
-            android:label="@string/title_activity_print"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

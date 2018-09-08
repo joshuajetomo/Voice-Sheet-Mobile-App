@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/twitter_back"
         android:orientation="vertical">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             android:theme="@style/StyleToolBar"
-            app:titleTextColor="@color/black">
+           >
 
         </android.support.v7.widget.Toolbar>
 
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@color/white"
+            android:background="@color/twitter_back"
             android:orientation="vertical">
 
             <TextView
@@ -43,11 +43,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/molengo"
+                android:fontFamily="sans-serif-thin"
                 android:text="@string/musical_notes"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textColor="@color/white"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/musical_notes_pitch1"
@@ -58,9 +58,9 @@
                 android:layout_marginTop="20dp"
                 android:padding="6dp"
                 android:text="C --> do"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -71,24 +71,24 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="30dp"
                 android:padding="6dp"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:text="D --> re"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/musical_notes_pitch3"
                 android:layout_width="wrap_content"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginLeft="30dp"
                 android:padding="6dp"
                 android:text="E --> mi"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -97,12 +97,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:layout_marginLeft="30dp"
                 android:padding="6dp"
                 android:text="F --> fa"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -112,11 +112,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginLeft="30dp"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:padding="6dp"
                 android:text="G --> sol"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -128,9 +128,9 @@
                 android:layout_marginLeft="30dp"
                 android:padding="6dp"
                 android:text="A --> la"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -144,8 +144,8 @@
                 android:padding="6dp"
                 android:text="B --> ti"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-thin"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -156,11 +156,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="@font/philosopher"
+                android:fontFamily="sans-serif-thin"
                 android:padding="6dp"
                 android:text="@string/musical_notes_2"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp" />
 
             <FrameLayout

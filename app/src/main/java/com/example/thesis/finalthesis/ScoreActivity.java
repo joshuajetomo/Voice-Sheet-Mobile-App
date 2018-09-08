@@ -23,6 +23,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.nfc.Tag;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -78,8 +79,8 @@ public class ScoreActivity extends AppCompatActivity {
     public static final String TAG = "ScoreActivity";
     private static final boolean UseNoteCursorIfPossible = true; // else bar cursor
     private static final boolean ColourPlayedNotes = false;
-    private Button plus;
-    private Button minus;
+    private ImageButton plus;
+    private ImageButton minus;
 
     private static final int kPlayLoopRepeats = 7;
     private String outputFileName = "";
@@ -91,6 +92,8 @@ public class ScoreActivity extends AppCompatActivity {
     private boolean playingRight = true;
     String  result;
     public String namefile;
+    private ImageButton stop_score_layout;
+
 
     private ImageButton samplebutton;
 
@@ -163,7 +166,7 @@ public class ScoreActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.score_layout);
+        setContentView(R.layout.activity_score);
         Toolbar toolbar = (Toolbar) findViewById(R.id.scoretoolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -173,7 +176,15 @@ public class ScoreActivity extends AppCompatActivity {
         fileName = bundle.getString("fileName");
         hideBeat();
 
-        plus = (Button)findViewById(R.id.plus);
+        stop_score_layout = findViewById(R.id.stop_score_layout);
+        stop_score_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stop_play();
+            }
+        });
+
+        plus = (ImageButton) findViewById(R.id.plus);
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,7 +192,7 @@ public class ScoreActivity extends AppCompatActivity {
             }
         });
 
-        minus = (Button) findViewById(R.id.minus);
+        minus = (ImageButton) findViewById(R.id.minus);
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -332,9 +343,9 @@ public class ScoreActivity extends AppCompatActivity {
     private void setPlayButtonImage(PlayPause playPause) {
         ImageButton playButton = (ImageButton) findViewById(R.id.play_btn);
         if (playPause == PlayPause.pause)
-            playButton.setImageDrawable(getResources().getDrawable(R.drawable.pausescore));
+            playButton.setImageDrawable(getResources().getDrawable(R.drawable.pause_pause));
         else
-            playButton.setImageDrawable(getResources().getDrawable(R.drawable.playscore));
+            playButton.setImageDrawable(getResources().getDrawable(R.drawable.play_play));
     }
 
     /** update the play-pause button image according to the player state */

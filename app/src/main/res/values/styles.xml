@@ -1,11 +1,13 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimary">@color/twittertoolbar</item>
+        <item name="colorPrimaryDark">@color/twitter_back</item>
+        <item name="colorAccent">@color/LightGray</item>
+    </style>
+    <style name="splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/gray</item>
         <item name="colorAccent">@color/green</item>
-
-
     </style>
 
     <style name="Theme_MyDialog" parent="Theme.AppCompat.Light.Dialog"></style>
@@ -15,6 +17,6 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="StyleToolBar" parent="ThemeOverlay.AppCompat.ActionBar">
-        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlNormal">@color/twittertext</item>
     </style>
 </resources>

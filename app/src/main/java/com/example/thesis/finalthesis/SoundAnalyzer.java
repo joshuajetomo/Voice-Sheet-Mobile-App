@@ -402,6 +402,7 @@ public class SoundAnalyzer extends Observable implements AudioRecord.OnRecordPos
         }
         if(wavelengths < 2)      // if the tone is not received it is considered a "rest"
         {
+
             /*long nowTime = System.currentTimeMillis();
             long deltaTime = nowTime - initTime;
             String timeMessage = ""+deltaTime;
@@ -421,7 +422,6 @@ public class SoundAnalyzer extends Observable implements AudioRecord.OnRecordPos
 
         // Log.d(TAG, "MEAN: " + mean + " STDV: " + stdv);
         // Log.d(TAG, "Frequency:" + calculatedFrequency);
-
 
         setFrequencyMessage(calculatedFrequency);
 

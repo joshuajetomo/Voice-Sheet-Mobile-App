@@ -105,6 +105,7 @@ public class ScoreView extends LinearLayout  {
      */
     static final float kMargin = 10;
 
+
     /**
      * construct the SeeScore scrollable View
      * @param context (usually the MainActivity)

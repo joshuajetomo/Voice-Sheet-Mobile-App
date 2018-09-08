@@ -4,19 +4,21 @@
     android:layout_height="match_parent"
      tools:context=".RecordActivity"
     android:clickable="true"
-    android:background="@color/colorPrimary"
+    android:background="@color/twitter_back"
     android:id="@+id/content"
     android:gravity="center"
     >
 
     <EditText
-        android:layout_width="200dp"
+        android:id="@+id/title_musicsheet"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="150dp"
-        android:hint="Music Sheet Title"
-        android:id="@+id/title_musicsheet"
-        />
+        android:layout_marginBottom="160dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-thin"
+        android:hint="Musicxml Filename"
+        android:textColorHint="@color/white" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:textColor="@color/red"
+            android:textColor="@color/white"
             android:text="Recording"
             android:textSize="30sp"
             android:layout_gravity="center"
@@ -46,21 +48,32 @@
             android:text="00:00"
             android:textColor="@color/blue"
             android:textSize="60sp" />
+
         <TextView
+            android:id="@+id/buttontap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
             android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
             android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-thin"
             android:text="Tap the Button to Start \n           Recording"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:id="@+id/buttontap"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
-            />
 
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/buttontap_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Tap the Button to Stop \n           Recording"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="20sp" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -69,17 +82,13 @@
         >
         <ImageButton
             android:id="@+id/microphone"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="@null"
-            android:contentDescription="@string/record_btn_description"
             android:layout_gravity="center|bottom"
-            android:paddingBottom="5dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/microphone"
-            style="@style/Widget.AppCompat.Button.Borderless"/>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/record_btn_description"
+            android:src="@drawable/micro" />
     </RelativeLayout>
 
 </FrameLayout>

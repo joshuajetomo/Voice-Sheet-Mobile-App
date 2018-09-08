@@ -3,17 +3,18 @@
     android:orientation="vertical" android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:background="@color/intro_color"
+    android:background="@color/white"
     >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_gravity="center"
         >
        <ImageView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:src="@drawable/intro_logo"
+           android:src="@drawable/voicesheet_splash_screen"
            android:layout_gravity="center"
            />
     </LinearLayout>

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/twitter_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Developers"
         android:layout_gravity="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         android:fontFamily="sans-serif-light"
         android:layout_marginTop="65dp"
@@ -54,7 +55,7 @@
             android:layout_gravity="top|left"
             android:text="Joshua Jetomo"
             android:textSize="15dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginLeft="25dp"
 
             />
@@ -64,7 +65,7 @@
             android:text="Joel Rostata"
             android:layout_gravity="top|right"
             android:textSize="15dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginRight="28dp"
 
 
@@ -105,7 +106,7 @@
             android:layout_gravity="top|left"
             android:text="Jadeza May Bantilan"
             android:textSize="15dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginLeft="15dp"
 
             />
@@ -115,7 +116,7 @@
             android:text="Kenneth Repoyo"
             android:layout_gravity="top|right"
             android:textSize="15dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginRight="15dp"
 
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/title_activity_saved_scores" android:id="@+id/scores" android:icon="@drawable/help"/>
-    <item android:title="@string/print" android:id="@+id/print" android:icon="@drawable/help"/>
-
-
-    <item android:title="@string/help" android:id="@+id/nav_help" android:icon="@drawable/help"/>
-    <item android:title="@string/nav_settings" android:id="@+id/nav_settings" android:icon="@drawable/settings"/>
-    <item android:title="@string/nav_about" android:id="@+id/nav_about" android:icon="@drawable/about"/>
+    <item android:title="@string/title_activity_saved_scores" android:id="@+id/scores" android:icon="@drawable/menu_scores"/>
+      <item android:title="@string/help" android:id="@+id/nav_help" android:icon="@drawable/menu_tutorial" />
+    <item android:title="@string/nav_settings" android:id="@+id/nav_settings" android:icon="@drawable/menu_settings"/>
+    <item android:title="@string/nav_about" android:id="@+id/nav_about" android:icon="@drawable/menu_about"/>
 </menu>

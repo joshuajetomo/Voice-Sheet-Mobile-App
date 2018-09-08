@@ -36,7 +36,7 @@ public class MusicXmlRenderer
         Element elID = new Element("identification");
         Element elCreator = new Element("creator");     // element creator
         elCreator.addAttribute(new Attribute("type", "composer"));
-        elCreator.appendChild("voice sheet app");
+        elCreator.appendChild("VoiceSheet App");
         elID.appendChild(elCreator);
 
         Element elEncoding = new Element("encoding");   // element encoding

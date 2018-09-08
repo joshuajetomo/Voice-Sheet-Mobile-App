@@ -9,27 +9,42 @@
     tools:showIn="@layout/activity_settings">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="vertical"
-        >
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="20dp"
+            android:background="@color/gray"
+            android:progress="50"
+            android:padding="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Development is on"
+            android:text="Volume"
             android:textSize="30dp"
-
-            android:textColor="@color/red"
-            />
-        <TextView
+            android:layout_gravity="center"/>
+        <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="going..."
+            android:id="@+id/Mute"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:textSize="30dp"
-            android:textColor="@color/red"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mute"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+
 
     </LinearLayout>
+
 </FrameLayout>

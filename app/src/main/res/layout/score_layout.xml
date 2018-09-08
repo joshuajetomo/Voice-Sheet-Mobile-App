@@ -6,40 +6,26 @@
     android:layout_height="match_parent"
     android:background="@color/white"
 
-
     >
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/Appbar"
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/scoretoolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/StyleToolBar"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:titleTextColor="@color/black" />
-
-
-    </android.support.design.widget.AppBarLayout>
-
+        android:layout_alignParentTop="true"
+        android:id="@+id/Appbar"
+        android:layout_marginTop="10dp"
+        ></FrameLayout>
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/play_btn"
+        android:layout_above="@+id/frame_score"
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:layout_alignWithParentIfMissing="false"
         android:layout_below="@+id/Appbar"
         android:layout_centerHorizontal="true"
-        android:fillViewport="true"
-        />
+        android:fillViewport="true" />
 
     <ScrollView
         android:id="@+id/scrollViewCursor"
@@ -50,10 +36,9 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/play_btn">
-
-
+        android:layout_above="@+id/frame_score">
     </ScrollView>
+
 
     <TextView
         android:id="@+id/beatText"
@@ -62,6 +47,7 @@
         android:layout_centerHorizontal="true"
         android:background="#00000000"
         android:singleLine="true"
+        android:fontFamily="sans-serif-thin"
         android:text="99"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#80ff0000"
@@ -70,55 +56,66 @@
         android:layout_below="@+id/Appbar"
         android:visibility="visible" />
 
-    <ImageButton
-        android:id="@+id/play_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <FrameLayout
+        android:id="@+id/frame_score"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="10dp"
-        android:background="@null"
-        android:onClick="play_pause"
-        android:src="@drawable/playscore"
-        />
+        android:layout_alignParentStart="true"
+        android:background="@color/twittertoolbar">
 
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="play_pause"
+            android:src="@drawable/play_play" />
 
+        <CheckBox
+            android:id="@+id/metronomeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="125dp"
+            android:checked="true"
+            android:fontFamily="sans-serif-thin"
+            android:text="Beat"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
 
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="74dp"
 
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/note_note_up" />
 
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="62dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/note_note_down"
+            android:textSize="20sp" />
 
-
-    <CheckBox
-        android:id="@+id/metronomeSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="50dp"
-        android:textSize="16dp"
-        android:layout_marginRight="20dp"
-        android:text="Beat" />
-
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="10dp"
-        android:text="+"
-        android:id="@+id/plus"
-        android:textSize="16sp"
-        />
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:text="-"
-        android:id="@+id/minus"
-        android:textSize="20sp"
-        android:layout_marginBottom="5dp"
-        android:layout_alignParentBottom="true"
-        />
+        <ImageButton
+            android:id="@+id/stop_score_layout"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:foregroundTint="@color/red"
+            android:src="@drawable/baseline_not_interested_white_24" />
+    </FrameLayout>
 
 </RelativeLayout>

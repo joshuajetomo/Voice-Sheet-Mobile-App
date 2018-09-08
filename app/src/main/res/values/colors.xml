@@ -10,6 +10,12 @@
     <color name="black">#000000</color>
     <color name="transparent">#808080</color>
     <color name="red">#FFFF0000</color>
-    <color name="green">#FF00C853</color>
+    <color name="green">#000000</color>
     <color name="intro_color">#232323</color>
+    <color name="twitter_back">#141d26</color>
+    <color name="twittertoolbar">#243447</color>
+    <color name="twittertext">#1d8dee</color>
+    <color name="LightGray">#d3d3d3</color>
+
+    <color name="gray">#BFBFBF</color>
 </resources>

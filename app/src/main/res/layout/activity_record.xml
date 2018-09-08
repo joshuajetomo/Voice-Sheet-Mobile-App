@@ -21,6 +21,8 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_record"
         app:menu="@menu/navigationdrawer"
-        android:background="@color/white"/>
+        app:itemIconTint="@color/LightGray"
+        app:itemTextColor="@color/white"
+        android:background="@color/twittertoolbar"/>
 
 </android.support.v4.widget.DrawerLayout>

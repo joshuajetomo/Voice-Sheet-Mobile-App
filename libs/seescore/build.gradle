@@ -27,7 +27,6 @@ android {
             renderscript.srcDirs = ['src']
             res.srcDirs = ['src/main/res']
             assets.srcDirs = ['src/main/assets']
-
             manifest.srcFile 'src/main/AndroidManifest.xml'
         }
     }

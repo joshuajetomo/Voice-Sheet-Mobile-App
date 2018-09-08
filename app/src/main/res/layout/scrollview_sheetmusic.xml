@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/twitter_back"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -19,26 +19,12 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             android:theme="@style/StyleToolBar"
-            app:titleTextColor="@color/black">
+           >
 
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
-    <TextView
-        android:id="@+id/sheet_music_how"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-condensed"
-        android:padding="6dp"
-        android:text="1. How to read Sheet Music"
-        android:textAlignment="gravity"
-        android:textColor="@color/black"
-        android:textSize="22dp"
-        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,14 +37,29 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@color/white">
+            android:background="@color/twitter_back">
+
+            <TextView
+                android:id="@+id/sheet_music_how"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:padding="6dp"
+                android:text="1. How to read Sheet Music"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/sheet_music1"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:textSize="20dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:layout_gravity="left"
@@ -68,9 +69,9 @@
             <TextView
                 android:id="@+id/sheet_music_staff"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:textSize="22dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:textStyle="bold"
@@ -82,9 +83,9 @@
             <TextView
                 android:id="@+id/sheet_music_staff2"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:textSize="20dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:layout_gravity="left"
@@ -111,19 +112,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:padding="6dp"
                 android:text="@string/sheet_music_staff2"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/sheet_music_treble"
                 android:layout_height="wrap_content"
                 android:textSize="22dp"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:textStyle="bold"
@@ -137,8 +138,8 @@
                 android:id="@+id/sheet_music_treble2"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:layout_gravity="left"
@@ -163,8 +164,8 @@
                 android:id="@+id/sheet_music_barline"
                 android:layout_height="wrap_content"
                 android:textSize="22dp"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:textStyle="bold"
@@ -180,18 +181,18 @@
                 android:layout_height="280dp"
                 android:layout_gravity="left"
                 android:layout_marginTop="9dp"
-                android:fontFamily="sans-serif-condensed"
+                android:fontFamily="sans-serif-thin"
                 android:padding="6dp"
                 android:text="@string/sheet_music_barline"
                 android:textAlignment="gravity"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp" />
             <TextView
                 android:id="@+id/sheet_music_notes"
                 android:layout_height="wrap_content"
                 android:textSize="22dp"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:textStyle="bold"
@@ -218,8 +219,8 @@
                 android:id="@+id/sheet_music_notes2"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:padding="6dp"
                 android:layout_gravity="left"

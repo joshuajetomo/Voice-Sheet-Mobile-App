@@ -26,6 +26,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.print.PrintHelper;
@@ -106,8 +107,8 @@ public class SavedScores extends AppCompatActivity {
      * the index of the next file to load from the internal directory
      */
     private int nextFileIndex = 0;
-    private Button plus;
-    private Button minus;
+    private ImageButton plus;
+    private ImageButton stop_score;
     /**
      * the current file which is displayed
      */
@@ -172,9 +173,15 @@ public class SavedScores extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         Bundle bundle = this.getIntent().getExtras();
 
+        stop_score = findViewById(R.id.stop_score);
+        stop_score.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stop_play();
+            }
+        });
 
-
-        plus = (Button)findViewById(R.id.plus_score);
+        plus = (ImageButton)findViewById(R.id.plus_score);
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -182,7 +189,7 @@ public class SavedScores extends AppCompatActivity {
               /*  backgroundTranspose(+1);*/
             }
         });
-        minus = (Button) findViewById(R.id.minus_score);
+      /*  minus = (Button) findViewById(R.id.minus_score);
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -195,7 +202,7 @@ public class SavedScores extends AppCompatActivity {
 
                 }
             }
-        });
+        });*/
 
 
         //for make the cursor appear and attached in //scrollview_scores
@@ -301,7 +308,7 @@ public class SavedScores extends AppCompatActivity {
                 currentFile = new File(filePath);
             nextFileIndex = savedInstanceState.getInt(NEXT_FILE_INDEX);
             magnification = savedInstanceState.getFloat(MAGNIFICATION);
-            playingLeft = savedInstanceState.getBoolean("playingLeft");
+             playingLeft = savedInstanceState.getBoolean("playingLeft");
             playingRight = savedInstanceState.getBoolean("playingRight");
             Object o = getLastNonConfigurationInstance();
             if (o instanceof SScore)
@@ -342,9 +349,9 @@ public class SavedScores extends AppCompatActivity {
     private void setPlayButtonImage(PlayPause playPause) {
         ImageButton playButton = (ImageButton) findViewById(R.id.play_btn_scores);
         if (playPause == PlayPause.pause)
-            playButton.setImageDrawable(getResources().getDrawable(R.drawable.pausescore));
+            playButton.setImageDrawable(getResources().getDrawable(R.drawable.pause_pause));
         else
-            playButton.setImageDrawable(getResources().getDrawable(R.drawable.playscore));
+            playButton.setImageDrawable(getResources().getDrawable(R.drawable.play_play ));
     }
 
     /** update the play-pause button image according to the player state */
@@ -686,6 +693,30 @@ public class SavedScores extends AppCompatActivity {
         return null;
     }
 
+    //test for Previous score
+
+    private SScore PrevNextFile()
+    {
+        List<File> files = sourceXMLFiles();
+        int index = 0;
+        for (File file : files)
+        {
+            if (index == nextFileIndex)
+            {
+                SScore sc = loadFile(file);
+                nextFileIndex = (index - 1) % files.size();
+                if (sc != null)
+                {
+                    currentFile = file;
+                    currentScore = sc;
+                    return sc;
+                }
+            }
+            --index;
+        }
+        return null;
+    }
+
     /** show the text in the transpose TextView  */
     private void setTransposeText(String text) {
         TextView transposeTextView = (TextView) findViewById(R.id.transposeLabel);
@@ -763,6 +794,8 @@ public class SavedScores extends AppCompatActivity {
             }
         }).start();
     }
+
+
 
     /**
      * called on resuming the activity, including after device rotation
